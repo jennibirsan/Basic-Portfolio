@@ -42,6 +42,11 @@ padding: 20px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 70px;
       padding:20px;
       width: 924px;
       width: 70%;
@@ -118,3 +123,34 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.box-text {
+    color: white;
+    background-color: #4aaaa5;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+/* <!-- Note: I got this below code to allign images from w3 schools. link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_images_side_by_side --> */
+
+* {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
