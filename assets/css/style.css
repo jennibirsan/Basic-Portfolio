@@ -71,6 +71,10 @@ font-family: Arial, Helvetica, sans-serif;
 /* Note: Davis helped me figure out how the display and justify-content and align-items*/
 
 #footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top: 4px solid #4aaaa5;
     position: fixed;
     bottom: 0;
     height: 25px;
@@ -79,8 +83,38 @@ font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-top: 4px solid #4aaaa5;
   }
+
+  /* Note: I got this contact form from w3 schools! I got the code and tweaked it from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form */
+
+  * {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4aaaa5;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
